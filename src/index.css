@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #efd19c;
+  font-family: "Baskersvville";
+}
+
+body {
+  background-color: #2f5946;
+}
+
+.circle-sm1 {
+  min-height: 15px;
+  min-width: 15px;
+  max-height: 30px;
+  max-width: 30px;
+  border-radius: 100%;
+  background-color: #efd19c;
+}
+
+.circle-sm2 {
+  min-height: 22px;
+  min-width: 22px;
+  max-height: 45px;
+  max-width: 45px;
+  border-radius: 100%;
+  background-color: #efd19c;
+}
+
+.circle-sm3 {
+  min-height: 30px;
+  min-width: 30px;
+  max-height: 60px;
+  max-width: 60px;
+  border-radius: 100%;
+  background-color: #efd19c;
+}
+
+.circle-sm4 {
+  min-height: 40px;
+  min-width: 40px;
+  max-height: 80px;
+  max-width: 80px;
+  border-radius: 100%;
+  background-color: #efd19c;
+}
+
+.hz-line {
+  border-top: 6px dotted #efd19c;
+}/*# sourceMappingURL=index.css.map */
