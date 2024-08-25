@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import StorySection from "../components/story-section.component";
+import SectionDefault from "../components/section.component";
 import { FaChurch, FaWineBottle } from "react-icons/fa";
 import { createRoot } from "react-dom/client";
 import { APIProvider, Map } from "@vis.gl/react-google-maps";
 
 const Home = () => {
+  const [display, setDisplay] = useState(false);
+
+  const toggleAccordion = () => {
+    if (display == false) {
+      setDisplay(true);
+    } else setDisplay(false);
+
+    console.log(display);
+  };
+
   return (
     <>
       <section
@@ -159,7 +170,7 @@ const Home = () => {
       />
       {/* Anything above here works just fine */}
 
-      <section className="bg-[#2F5946] h-[100%] p-5">
+      <SectionDefault bgColor="#2F5946" id="entourage">
         <div className="container mx-auto  text-center">
           <div>
             <h1>
@@ -303,8 +314,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
-      <section className="bg-[#234435] h-[100%] p-5">
+      </SectionDefault>
+      <SectionDefault bgColor="#234435" id="venue">
         <div className="container mx-auto  text-center space-y-5">
           <div>
             <h1>
@@ -333,9 +344,9 @@ const Home = () => {
             <h3 className="font-bold text-[18px]">To Follow</h3>
           </div>
         </div>
-      </section>
-      <section className="bg-[#2F5946] h-[100%] p-5">
-        <div className="container mx-auto  text-center">
+      </SectionDefault>
+      <SectionDefault bgColor="#2F5946">
+        <div className="container mx-auto text-center">
           <div>
             <h1>
               <span className="font-baskervville text-[40px] sm:text-[3rem] font-bold text-[#EFD19C]">
@@ -366,7 +377,229 @@ const Home = () => {
             <div className="p-5 bg-[#234435] rounded-xl h-[500px]"></div>
           </div>
         </div>
-      </section>
+      </SectionDefault>
+      <SectionDefault bgColor="#234435" id="attire">
+        <div>
+          <h1>
+            <span className="font-light text-[40px] sm:text-[8rem] font-greatVibes tracking-wider text-[#EFD19C]">
+              The{" "}
+            </span>
+            <span className="font-baskervville text-[40px] sm:text-[8rem] font-bold text-[#EFD19C]">
+              Attire
+            </span>
+          </h1>
+        </div>
+        <div>
+          <h1 className="text-5xl font-bold tracking-widest p-5">Formal</h1>
+        </div>
+        <div className="grid sm:grid-cols-5 p-5 space-y-4">
+          <div className="bg-[#2F5946] h-[100px] w-[100px] rounded-full mx-auto"></div>
+          <div className="bg-[#2F5946] h-[100px] w-[100px] rounded-full mx-auto"></div>
+          <div className="bg-[#2F5946] h-[100px] w-[100px] rounded-full mx-auto"></div>
+          <div className="bg-[#2F5946] h-[100px] w-[100px] rounded-full mx-auto"></div>
+          <div className="bg-[#2F5946] h-[100px] w-[100px] rounded-full mx-auto"></div>
+        </div>
+        <div className="p-5">
+          <p>
+            {" "}
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <br></br>
+          <p>
+            {" "}
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <br></br>
+          <p>
+            {" "}
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div>
+          <h1 className="text-5xl font-bold tracking-widest p-5">
+            For Principal Sponsors
+          </h1>
+        </div>
+        <div className="grid sm:grid-cols-5 p-5">
+          <div className="bg-[#2F5946] h-[100px] w-[100px] rounded-full mx-auto col-span-5"></div>
+        </div>
+        <div className="px-5">
+          <p>
+            {" "}
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <br></br>
+          <p>
+            {" "}
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <br></br>
+          <p>
+            {" "}
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </SectionDefault>
+      <SectionDefault bgColor="#2F5946" id="rsvp">
+        <div className="container mx-auto  text-center ">
+          <div>
+            <h1>
+              <span className="font-light text-[40px] sm:text-[8rem] font-greatVibes tracking-wider text-[#EFD19C]">
+                The{" "}
+              </span>
+              <span className="font-baskervville text-[40px] sm:text-[8rem] font-bold text-[#EFD19C]">
+                RSVP
+              </span>
+            </h1>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+          </p>
+          <br></br>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+          </p>
+          <br></br>
+          <div className="p-5 bg-[#234435] rounded-xl h-[200px] w-[200px] mx-auto"></div>
+        </div>
+      </SectionDefault>
+      <SectionDefault bgColor="#234435" id="faq">
+        <div>
+          <h1>
+            <span className="font-light text-[40px] sm:text-[8rem] font-greatVibes tracking-wider text-[#EFD19C]">
+              The{" "}
+            </span>
+            <span className="font-baskervville text-[40px] sm:text-[8rem] font-bold text-[#EFD19C]">
+              FAQs
+            </span>
+          </h1>
+        </div>
+        <div className="p-5">
+          <button
+            className="accordion w-full bg-[#2F5946] border-[#EFD19C] border rounded-t-xl p-5 text-2xl font-bold"
+            onClick={toggleAccordion}
+          >
+            Question 1: Lorem Ipsum
+          </button>
+          {display && (
+            <div className="border-[#EFD19C] rounded-b-xl border p-5">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          )}
+        </div>
+        <div className="p-5">
+          <button
+            className="accordion w-full bg-[#2F5946] border-[#EFD19C] border rounded-t-xl p-5 text-2xl font-bold"
+            onClick={toggleAccordion}
+          >
+            Question 1: Lorem Ipsum
+          </button>
+          {display && (
+            <div className="border-[#EFD19C] border p-5 rounded-b-xl">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          )}
+        </div>
+        <div className="p-5">
+          <button
+            className="accordion w-full bg-[#2F5946] border-[#EFD19C] border rounded-t-xl p-5 text-2xl font-bold"
+            onClick={toggleAccordion}
+          >
+            Question 1: Lorem Ipsum
+          </button>
+          {display && (
+            <div className="border-[#EFD19C] rounded-b-xl border p-5">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          )}
+        </div>
+        <div className="p-5">
+          <button
+            className="accordion w-full bg-[#2F5946] border-[#EFD19C] border rounded-t-xl p-5 text-2xl font-bold"
+            onClick={toggleAccordion}
+          >
+            Question 1: Lorem Ipsum
+          </button>
+          {display && (
+            <div className="border-[#EFD19C] rounded-b-xl border p-5">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          )}
+        </div>
+        <div className="p-5">
+          <button
+            className="accordion w-full bg-[#2F5946] border-[#EFD19C] border rounded-t-xl p-5 text-2xl font-bold"
+            onClick={toggleAccordion}
+          >
+            Question 1: Lorem Ipsum
+          </button>
+          {display && (
+            <div className="border-[#EFD19C] rounded-b-xl border p-5">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          )}
+        </div>
+      </SectionDefault>
     </>
   );
 };
