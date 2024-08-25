@@ -4,18 +4,9 @@ import SectionDefault from "../components/section.component";
 import { FaChurch, FaWineBottle } from "react-icons/fa";
 import { createRoot } from "react-dom/client";
 import { APIProvider, Map } from "@vis.gl/react-google-maps";
+import FAQAccordion from "../components/faq-accordion.component";
 
 const Home = () => {
-  const [display, setDisplay] = useState(false);
-
-  const toggleAccordion = () => {
-    if (display == false) {
-      setDisplay(true);
-    } else setDisplay(false);
-
-    console.log(display);
-  };
-
   return (
     <>
       <section
@@ -171,7 +162,7 @@ const Home = () => {
       {/* Anything above here works just fine */}
 
       <SectionDefault bgColor="#2F5946" id="entourage">
-        <div className="container mx-auto  text-center">
+        <div className="container mx-auto text-center">
           <div>
             <h1>
               <span className="font-light text-[40px] sm:text-[8rem] font-greatVibes tracking-wider text-[#EFD19C]">
@@ -183,14 +174,14 @@ const Home = () => {
             </h1>
           </div>
           <div className="grid sm:grid-cols-2">
-            <div className="mx-auto p-5">
+            <div className="mx-auto p-5 col-span-2 sm:col-span-1">
               <h2 className="text-[25px] font-bold">Parents of the Groom</h2>
               <ul className="text-[18px]">
                 <li>Lorem Ipsum</li>
                 <li>Lorem Ipsum</li>
               </ul>
             </div>
-            <div className="mx-auto p-5">
+            <div className="mx-auto p-5 col-span-2 sm:col-span-1">
               <h2 className="text-[25px] font-bold">Parents of the Bride</h2>
               <ul className="text-[18px]">
                 <li>Lorem Ipsum</li>
@@ -204,7 +195,7 @@ const Home = () => {
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
             </div>
-            <div className="mx-auto p-5">
+            <div className="mx-auto p-5 col-span-2 sm:col-span-1">
               <ul>
                 <li>Lorem Ipsum</li>
                 <li>Lorem Ipsum</li>
@@ -213,7 +204,7 @@ const Home = () => {
                 <li>Lorem Ipsum</li>
               </ul>
             </div>
-            <div className="mx-auto p-5">
+            <div className="mx-auto p-5 col-span-2 sm:col-span-1">
               <ul>
                 <li>Lorem Ipsum</li>
                 <li>Lorem Ipsum</li>
@@ -227,14 +218,14 @@ const Home = () => {
                 To Assist us with our needs
               </h2>
             </div>
-            <div className="mx-auto p-5">
+            <div className="mx-auto p-5 col-span-2 sm:col-span-1">
               <h2 className="text-[25px] font-bold">Best Man</h2>
               <ul className="text-[18px]">
                 <li>Lorem Ipsum</li>
                 <li>Lorem Ipsum</li>
               </ul>
             </div>
-            <div className="mx-auto p-5">
+            <div className="mx-auto p-5 col-span-2 sm:col-span-1">
               <h2 className="text-[25px] font-bold">Maid of Honor</h2>
               <ul className="text-[18px]">
                 <li>Lorem Ipsum</li>
@@ -246,14 +237,14 @@ const Home = () => {
                 To guide us in our way
               </h2>
             </div>
-            <div className="mx-auto p-5">
-              <h2 className="text-[25px] font-bold">Groomsmen</h2>
+            <div className="mx-auto p-5 col-span-2 sm:col-span-1">
+              <h2 className="text-[25px] font-bold ">Groomsmen</h2>
               <ul className="text-[18px]">
                 <li>Lorem Ipsum</li>
                 <li>Lorem Ipsum</li>
               </ul>
             </div>
-            <div className="mx-auto p-5">
+            <div className="mx-auto p-5 col-span-2 sm:col-span-1">
               <h2 className="text-[25px] font-bold">Bridesmaids</h2>
               <ul className="text-[18px]">
                 <li>Lorem Ipsum</li>
@@ -263,14 +254,14 @@ const Home = () => {
             <div className="text-center col-span-2">
               <h2 className="text-[25px] font-bold">Secondary Sponsors</h2>
             </div>
-            <div className="mx-auto p-5">
+            <div className="mx-auto p-5 col-span-2 sm:col-span-1">
               <h3 className="text-[18px] font-bold">To light our path</h3>
               <ul className="text-[18px]">
                 <li>Lorem Ipsum</li>
                 <li>Lorem Ipsum</li>
               </ul>
             </div>
-            <div className="mx-auto p-5">
+            <div className="mx-auto p-5 col-span-2 sm:col-span-1">
               <h3 className="text-[18px] font-bold">To clothe us as one</h3>
               <ul className="text-[18px]">
                 <li>Lorem Ipsum</li>
@@ -288,25 +279,25 @@ const Home = () => {
             </div>
             {/* This is the end of the div grid */}
           </div>
-          <div className="grid sm:grid-cols-3 p-5">
+          <div className="grid sm:grid-cols-3 p-5 space-y-4">
             <div className="col-span-3">
               <h2 className="text-[25px] font-bold italic">
                 To carry our symbol of love, treasure, and faith
               </h2>
             </div>
-            <div>
-              <h2 className="text-[25px] font-bold">Ring Bearer</h2>
+            <div className="col-span-3 sm:col-span-1">
+              <h2 className="text-[25px] font-bold ">Ring Bearer</h2>
               <ul>
                 <li>Lorem Ipsum</li>
               </ul>
             </div>
-            <div>
+            <div className="col-span-3 sm:col-span-1">
               <h2 className="text-[25px] font-bold">Coin Bearer</h2>
               <ul>
                 <li>Lorem Ipsum</li>
               </ul>
             </div>
-            <div>
+            <div className="col-span-3 sm:col-span-1">
               <h2 className="text-[25px] font-bold">Bible Bearer</h2>
               <ul>
                 <li>Lorem Ipsum</li>
@@ -494,111 +485,26 @@ const Home = () => {
             </span>
           </h1>
         </div>
-        <div className="p-5">
-          <button
-            className="accordion w-full bg-[#2F5946] border-[#EFD19C] border rounded-t-xl p-5 text-2xl font-bold"
-            onClick={toggleAccordion}
-          >
-            Question 1: Lorem Ipsum
-          </button>
-          {display && (
-            <div className="border-[#EFD19C] rounded-b-xl border p-5">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </div>
-          )}
-        </div>
-        <div className="p-5">
-          <button
-            className="accordion w-full bg-[#2F5946] border-[#EFD19C] border rounded-t-xl p-5 text-2xl font-bold"
-            onClick={toggleAccordion}
-          >
-            Question 1: Lorem Ipsum
-          </button>
-          {display && (
-            <div className="border-[#EFD19C] border p-5 rounded-b-xl">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </div>
-          )}
-        </div>
-        <div className="p-5">
-          <button
-            className="accordion w-full bg-[#2F5946] border-[#EFD19C] border rounded-t-xl p-5 text-2xl font-bold"
-            onClick={toggleAccordion}
-          >
-            Question 1: Lorem Ipsum
-          </button>
-          {display && (
-            <div className="border-[#EFD19C] rounded-b-xl border p-5">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </div>
-          )}
-        </div>
-        <div className="p-5">
-          <button
-            className="accordion w-full bg-[#2F5946] border-[#EFD19C] border rounded-t-xl p-5 text-2xl font-bold"
-            onClick={toggleAccordion}
-          >
-            Question 1: Lorem Ipsum
-          </button>
-          {display && (
-            <div className="border-[#EFD19C] rounded-b-xl border p-5">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </div>
-          )}
-        </div>
-        <div className="p-5">
-          <button
-            className="accordion w-full bg-[#2F5946] border-[#EFD19C] border rounded-t-xl p-5 text-2xl font-bold"
-            onClick={toggleAccordion}
-          >
-            Question 1: Lorem Ipsum
-          </button>
-          {display && (
-            <div className="border-[#EFD19C] rounded-b-xl border p-5">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </div>
-          )}
-        </div>
+        <FAQAccordion
+          question="Question 1"
+          answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. 1"
+        />
+        <FAQAccordion
+          question="Question 2"
+          answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. 2"
+        />
+        <FAQAccordion
+          question="Question 3"
+          answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. 3"
+        />
+        <FAQAccordion
+          question="Question 4"
+          answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. 4"
+        />
       </SectionDefault>
     </>
   );
