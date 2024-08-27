@@ -19,7 +19,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className=" h-[50px] fixed w-[100vw] top-0 bg-[#1C3A2C]">
+    <div className=" h-[50px] fixed w-[100vw] top-0 bg-[#1C3A2C] z-10">
       <div className="container h-[50px] mx-auto flex justify-between items-center p-5 font-baskervville font-bold text-[#EFD19C]">
         <div className="flex">
           <ul>

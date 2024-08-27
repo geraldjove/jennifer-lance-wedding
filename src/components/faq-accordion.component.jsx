@@ -11,7 +11,10 @@ const FAQAccordion = ({ question, answer }) => {
   return (
     <div className="p-5">
       <button
-        className="accordion w-full bg-[#2F5946] border-[#EFD19C] border rounded-t-xl p-5 text-2xl font-bold"
+        // className="accordion w-full bg-[#2F5946] border-[#EFD19C] border rounded-t-xl p-5 text-2xl font-bold"
+        className={`accordion w-full bg-[#2F5946] border-[#EFD19C] border p-5 text-2xl font-bold ${
+          display ? "rounded-t-xl" : "rounded-xl"
+        }`}
         onClick={toggleAccordion}
       >
         {question}

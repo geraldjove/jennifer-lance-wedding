@@ -55,4 +55,24 @@ body {
 
 .hz-line {
   border-top: 6px dotted #efd19c;
+}
+
+.backgroundFlowerHero {
+  background-image: url("../src/assets/img/watercolor-floral.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.backgroundFlower {
+  background: linear-gradient(90deg, rgba(35, 68, 53, 0.3) 0%, rgba(35, 68, 53, 0.3) 100%), url("../src/assets/img/flower-outline.webp") no-repeat top left, url("../src/assets/img/flower-outline.webp") no-repeat bottom right, #234435;
+}
+@media screen and (max-width: 750px) {
+  .backgroundFlower {
+    background-size: 50%;
+  }
+}
+
+.backgroundGoldFloral {
+  background: linear-gradient(0deg, rgba(35, 68, 53, 0.9) 0%, rgba(35, 68, 53, 0.7) 100%), url("../src/assets/img/gold-floral.webp") no-repeat center/cover;
 }/*# sourceMappingURL=index.css.map */
