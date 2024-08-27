@@ -60,7 +60,7 @@ const Attire = () => {
         <div className="bg-[#2F5946] h-[100px] w-[100px] rounded-full mx-auto col-span-5"></div>
       </div>
       <div className="px-5">
-        <p>
+        <p className="font-baskervville">
           {" "}
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -68,7 +68,7 @@ const Attire = () => {
           aliquip ex ea commodo consequat.
         </p>
         <br></br>
-        <p>
+        <p className="font-baskervville">
           {" "}
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -76,7 +76,7 @@ const Attire = () => {
           aliquip ex ea commodo consequat.
         </p>
         <br></br>
-        <p>
+        <p className="font-baskervville">
           {" "}
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
