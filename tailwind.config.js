@@ -4,6 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        sans: ["Baskervville", "sans-serif"],
         baskervville: ["Baskervville", "sans-serif"],
         greatVibes: ["Great Vibes", "sans-serif"],
       },
