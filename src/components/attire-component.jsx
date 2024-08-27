@@ -15,7 +15,9 @@ const Attire = () => {
         </h1>
       </div>
       <div>
-        <h1 className="text-5xl font-bold tracking-widest p-5">Formal</h1>
+        <h1 className="text-5xl font-bold tracking-widest p-5 font-baskervville">
+          Formal
+        </h1>
       </div>
       <div className="grid sm:grid-cols-5 p-5 space-y-4">
         <div className="bg-[#2F5946] h-[100px] w-[100px] rounded-full mx-auto"></div>
@@ -25,7 +27,7 @@ const Attire = () => {
         <div className="bg-[#2F5946] h-[100px] w-[100px] rounded-full mx-auto"></div>
       </div>
       <div className="p-5">
-        <p>
+        <p className="font-baskervville">
           {" "}
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -33,7 +35,7 @@ const Attire = () => {
           aliquip ex ea commodo consequat.
         </p>
         <br></br>
-        <p>
+        <p className="font-baskervville">
           {" "}
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -41,7 +43,7 @@ const Attire = () => {
           aliquip ex ea commodo consequat.
         </p>
         <br></br>
-        <p>
+        <p className="font-baskervville">
           {" "}
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -50,7 +52,7 @@ const Attire = () => {
         </p>
       </div>
       <div>
-        <h1 className="text-5xl font-bold tracking-widest p-5">
+        <h1 className="text-5xl font-bold tracking-widest p-5 font-baskervville">
           For Principal Sponsors
         </h1>
       </div>

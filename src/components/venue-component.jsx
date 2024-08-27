@@ -23,17 +23,25 @@ const Venue = () => {
             <i>
               <FaChurch className="text-[100px] p-5" />
             </i>
-            <h2 className="text-[25px] font-bold">The Ceremony</h2>
-            <h3 className="font-bold">Lights of Love Events Place</h3>
-            <h4 className="text-[18px]">Quezon City</h4>
-            <h4 className="text-[18px]">3:00 PM</h4>
+            <h2 className="text-[25px] font-bold font-baskervville">
+              The Ceremony
+            </h2>
+            <h3 className="font-bold font-baskervville">
+              Lights of Love Events Place
+            </h3>
+            <h4 className="text-[18px] font-baskervville">Quezon City</h4>
+            <h4 className="text-[18px] font-baskervville">3:00 PM</h4>
           </div>
           <div className="flex flex-col justify-center items-center">
             <i>
               <FaWineBottle className="text-[100px] p-5" />
             </i>
-            <h2 className="text-[25px] font-bold">The Reception</h2>
-            <h3 className="font-bold text-[18px]">To Follow</h3>
+            <h2 className="text-[25px] font-bold font-baskervville">
+              The Reception
+            </h2>
+            <h3 className="font-bold text-[18px] font-baskervville">
+              To Follow
+            </h3>
           </div>
         </div>
       </SectionDefault>
@@ -48,9 +56,9 @@ const Venue = () => {
           </div>
           <div className="grid sm:grid-cols-2 gap-4">
             <div className="p-5">
-              <h2>Important Details</h2>
+              <h2 className="font-baskervville">Important Details</h2>
               <br></br>
-              <p>
+              <p className="font-baskervville">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris

@@ -16,12 +16,12 @@ const RSVP = () => {
             </span>
           </h1>
         </div>
-        <p>
+        <p className="font-baskervville">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
         </p>
         <br></br>
-        <p>
+        <p className="font-baskervville">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
         </p>
