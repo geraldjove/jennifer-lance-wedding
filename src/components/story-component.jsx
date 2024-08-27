@@ -20,7 +20,7 @@ const Story = () => {
             </h1>
           </div>
           <div>
-            <p className="text-[#EFD19C]">
+            <p className="text-[#EFD19C] font-baskervville">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris

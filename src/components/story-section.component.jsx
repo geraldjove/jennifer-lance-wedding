@@ -18,7 +18,7 @@ const StorySection = ({ title1, title2, paragraph, bgColor, imageColor }) => {
           </h1>
         </div>
         <div className="mb-10">
-          <p className="text-[#EFD19C]">{paragraph}</p>
+          <p className="text-[#EFD19C] font-baskervville">{paragraph}</p>
         </div>
         <div
           className=" max-h-[500px] max-w-[1080px] rounded-xl mx-auto"

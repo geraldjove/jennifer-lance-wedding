@@ -24,7 +24,7 @@ const Navbar = () => {
         <div className="flex">
           <ul>
             <a href="/">
-              <li>J & L Wedding</li>
+              <li className="font-baskervville">J & L Wedding</li>
             </a>
           </ul>
         </div>
@@ -37,25 +37,25 @@ const Navbar = () => {
         <div className="hidden sm:block">
           <ul className="flex space-x-4">
             <a href="/" onClick={handleLinkClick}>
-              <li>Home</li>
+              <li className="font-baskervville">Home</li>
             </a>
             <a href="#story" onClick={handleLinkClick}>
-              <li>Our Story</li>
+              <li className="font-baskervville">Our Story</li>
             </a>
             <a href="#entourage" onClick={handleLinkClick}>
-              <li>Entourage</li>
+              <li className="font-baskervville">Entourage</li>
             </a>
             <a href="#venue" onClick={handleLinkClick}>
-              <li>Venue</li>
+              <li className="font-baskervville">Venue</li>
             </a>
             <a href="#attire" onClick={handleLinkClick}>
-              <li>Attire</li>
+              <li className="font-baskervville">Attire</li>
             </a>
             <a href="#rsvp" onClick={handleLinkClick}>
-              <li>RSVP</li>
+              <li className="font-baskervville">RSVP</li>
             </a>
             <a href="#faq" onClick={handleLinkClick}>
-              <li>FAQs</li>
+              <li className="font-baskervville">FAQs</li>
             </a>
           </ul>
         </div>
@@ -66,37 +66,37 @@ const Navbar = () => {
           <div>
             <ul className="text-center">
               <a href="/" onClick={handleLinkClick}>
-                <li className="block p-5 font-bold border-[#EFD19C] border">
+                <li className="font-baskervville block p-5 font-bold border-[#EFD19C] border">
                   Home
                 </li>
               </a>
               <a href="#story" onClick={handleLinkClick}>
-                <li className="block p-5 font-bold border-[#EFD19C] border">
+                <li className="font-baskervville block p-5 font-bold border-[#EFD19C] border">
                   Our Story
                 </li>
               </a>
               <a href="#entourage" onClick={handleLinkClick}>
-                <li className="block p-5 font-bold border-[#EFD19C] border">
+                <li className="font-baskervville block p-5 font-bold border-[#EFD19C] border">
                   Entourage
                 </li>
               </a>
               <a href="#venue" onClick={handleLinkClick}>
-                <li className="block p-5 font-bold border-[#EFD19C] border">
+                <li className="font-baskervville block p-5 font-bold border-[#EFD19C] border">
                   Venue
                 </li>
               </a>
               <a href="#attire" onClick={handleLinkClick}>
-                <li className="block p-5 font-bold border-[#EFD19C] border">
+                <li className="font-baskervville block p-5 font-bold border-[#EFD19C] border">
                   Attire
                 </li>
               </a>
               <a href="#rsvp" onClick={handleLinkClick}>
-                <li className="block p-5 font-bold border-[#EFD19C] border">
+                <li className="font-baskervville block p-5 font-bold border-[#EFD19C] border">
                   RSVP
                 </li>
               </a>
               <a href="#faq" onClick={handleLinkClick}>
-                <li className="block p-5 font-bold border-[#EFD19C] border rounded-b-xl">
+                <li className="font-baskervville block p-5 font-bold border-[#EFD19C] border rounded-b-xl">
                   FAQs
                 </li>
               </a>

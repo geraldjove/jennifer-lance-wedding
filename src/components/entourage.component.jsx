@@ -18,28 +18,34 @@ const Entourage = () => {
           </div>
           <div className="grid sm:grid-cols-2">
             <div className="mx-auto p-5 col-span-2 sm:col-span-1">
-              <h2 className="text-[25px] font-bold">Parents of the Groom</h2>
-              <ul className="text-[18px]">
+              <h2 className="text-[25px] font-bold font-baskervville">
+                Parents of the Groom
+              </h2>
+              <ul className="text-[18px] font-baskervville">
                 <li>Lorem Ipsum</li>
                 <li>Lorem Ipsum</li>
               </ul>
             </div>
             <div className="mx-auto p-5 col-span-2 sm:col-span-1">
-              <h2 className="text-[25px] font-bold">Parents of the Bride</h2>
-              <ul className="text-[18px]">
+              <h2 className="text-[25px] font-bold font-baskervville">
+                Parents of the Bride
+              </h2>
+              <ul className="text-[18px] font-baskervville">
                 <li>Lorem Ipsum</li>
                 <li>Lorem Ipsum</li>
               </ul>
             </div>
             <div className="col-span-2">
-              <h2 className="text-[25px] font-bold">Principal Sponsors</h2>
-              <p>
+              <h2 className="text-[25px] font-bold font-baskervville">
+                Principal Sponsors
+              </h2>
+              <p className="font-baskervville">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
             </div>
             <div className="mx-auto p-5 col-span-2 sm:col-span-1">
-              <ul>
+              <ul className="font-baskervville">
                 <li>Lorem Ipsum</li>
                 <li>Lorem Ipsum</li>
                 <li>Lorem Ipsum</li>
